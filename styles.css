@@ -163,8 +163,8 @@ body {
 .nav-toggle-label {
     display: none;
     margin-left: auto;
-    width: 30px;
-    height: 22px;
+    width: 26px;
+    height: 20px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -795,7 +795,7 @@ body {
 
 @media (max-width: 768px) {
     .glass-nav {
-        height: 68px;
+        height: 72px;
     }
     
     .nav-container {
@@ -804,6 +804,7 @@ body {
 
     .nav-toggle-label {
         display: flex;
+        margin-right: 0.28rem;
     }
 
     .nav-links {
@@ -847,7 +848,7 @@ body {
     }
 
     .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
-        transform: translateY(6px) rotate(45deg);
+        transform: translateY(5px) rotate(45deg);
     }
 
     .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
@@ -855,11 +856,11 @@ body {
     }
 
     .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
-        transform: translateY(-6px) rotate(-45deg);
+        transform: translateY(-5px) rotate(-45deg);
     }
 
     .logo img {
-        height: 54px;
+        height: 66px;
     }
     
     .name {
@@ -985,7 +986,7 @@ body {
 
 @media (max-width: 480px) {
     .glass-nav {
-        height: 60px;
+        height: 66px;
     }
     
     .nav-container {
@@ -999,17 +1000,18 @@ body {
     }
 
     .nav-toggle-label {
-        width: 28px;
-        height: 20px;
-        gap: 4px;
+        width: 23px;
+        height: 17px;
+        gap: 3px;
+        margin-right: 0.2rem;
     }
 
     .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
-        transform: translateY(5px) rotate(45deg);
+        transform: translateY(4px) rotate(45deg);
     }
 
     .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
-        transform: translateY(-5px) rotate(-45deg);
+        transform: translateY(-4px) rotate(-45deg);
     }
 
     .nav-links a {
@@ -1017,7 +1019,7 @@ body {
     }
 
     .logo img {
-        height: 52px;
+        height: 58px;
     }
     
     .name {
