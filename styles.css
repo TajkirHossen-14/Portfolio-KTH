@@ -795,7 +795,7 @@ body {
 
 @media (max-width: 768px) {
     .glass-nav {
-        height: 64px;
+        height: 68px;
     }
     
     .nav-container {
@@ -859,7 +859,7 @@ body {
     }
 
     .logo img {
-        height: 48px;
+        height: 54px;
     }
     
     .name {
@@ -985,7 +985,7 @@ body {
 
 @media (max-width: 480px) {
     .glass-nav {
-        height: 56px;
+        height: 60px;
     }
     
     .nav-container {
@@ -1017,7 +1017,7 @@ body {
     }
 
     .logo img {
-        height: 47px;
+        height: 52px;
     }
     
     .name {
@@ -1184,6 +1184,9 @@ body {
     display: block;
     text-decoration: none;
     color: inherit;
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadeInUp 0.75s ease-out both;
 }
 
 .project-card-link:visited,
@@ -1195,6 +1198,18 @@ body {
 .project-card-link:focus-visible {
     outline: 2px solid rgba(165, 180, 252, 0.85);
     outline-offset: 3px;
+}
+
+.projects-section .section-title {
+    animation: fadeInUp 0.7s ease-out 0.12s both;
+}
+
+.projects-section .project-card-link:nth-child(1) {
+    animation-delay: 0.28s;
+}
+
+.projects-section .project-card-link:nth-child(2) {
+    animation-delay: 0.44s;
 }
 
 /* Projects layout: avoid oversized cards on large screens */
@@ -1213,5 +1228,14 @@ body {
     .projects-grid {
         grid-template-columns: 1fr;
         max-width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .projects-section .section-title,
+    .projects-section .project-card-link {
+        animation: none;
+        opacity: 1;
+        transform: none;
     }
 }
