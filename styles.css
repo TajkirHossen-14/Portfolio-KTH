@@ -805,12 +805,12 @@ body {
     .nav-toggle-label {
         display: flex;
         margin-right: 0.28rem;
-        gap: 8px;
-        height: 26px;
+        gap: 9px;
+        height: 28px;
     }
 
     .nav-toggle-label span {
-        height: 3px;
+        height: 2.5px;
     }
 
     .nav-links {
@@ -854,7 +854,7 @@ body {
     }
 
     .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(9px) rotate(45deg);
     }
 
     .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
@@ -862,7 +862,7 @@ body {
     }
 
     .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-9px) rotate(-45deg);
     }
 
     .logo img {
