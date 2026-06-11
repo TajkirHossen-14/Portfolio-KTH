@@ -1,11 +1,6 @@
-/* ===================================================
-   Kazi Tajkir Hossen — Single-Page Portfolio
-   Advanced JavaScript: Particles, Scroll Reveal,
-   Typing Effect, Parallax Backgrounds, Smooth Nav,
-   Cursor Glow, Back-to-Top, Progress Bar
-   =================================================== */
 
-(function () {
+(function () 
+{
     'use strict';
 
     // ─────────────────────────────────────────────
@@ -38,13 +33,15 @@
     // ─────────────────────────────────────────────
     // 2. ACTIVE NAV LINK ON SCROLL (Intersection Observer)
     // ─────────────────────────────────────────────
-    const observerOptions = {
+    const observerOptions = 
+    {
         root: null,
         rootMargin: '-30% 0px -70% 0px',
         threshold: 0
     };
 
-    const sectionObserver = new IntersectionObserver((entries) => {
+    const sectionObserver = new IntersectionObserver((entries) => 
+    {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const id = entry.target.getAttribute('id');
