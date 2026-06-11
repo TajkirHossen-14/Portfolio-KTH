@@ -1,7 +1,9 @@
 /* ===========================
    CSS Variables & Reset
-   =========================== */
-:root {
+   =========================== 
+*/
+:root 
+{
     --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
@@ -15,7 +17,8 @@
     color-scheme: light;
 }
 
-html {
+html 
+{
     color-scheme: light !important;
     forced-color-adjust: none;
     scroll-behavior: smooth;
@@ -27,7 +30,8 @@ html {
     box-sizing: border-box;
 }
 
-body {
+body 
+{
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
     color: var(--text-primary);
@@ -35,10 +39,12 @@ body {
     overflow-x: hidden;
 }
 
-/* ===========================
+/* =============== 
    Particle Canvas
-   =========================== */
-#particleCanvas {
+   =============== 
+*/
+#particleCanvas 
+{
     position: fixed;
     top: 0;
     left: 0;
