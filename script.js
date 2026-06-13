@@ -3,15 +3,17 @@
 {
     'use strict';
 
-    // ─────────────────────────────────────────────
+    // ──────────────────────────── 
     // 1. SMOOTH SCROLL FOR ANCHOR LINKS
-    // ─────────────────────────────────────────────
+    // ──────────────────────────── 
     const navLinks = document.querySelectorAll('.nav-link');
     const navToggle = document.getElementById('nav-toggle');
     const sections = document.querySelectorAll('section[id]');
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
+    navLinks.forEach(link => 
+    {
+        link.addEventListener('click', function (e) 
+        {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const target = document.querySelector(targetId);
@@ -42,10 +44,13 @@
 
     const sectionObserver = new IntersectionObserver((entries) => 
     {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
+        entries.forEach(entry => 
+        {
+            if (entry.isIntersecting) 
+            {
                 const id = entry.target.getAttribute('id');
-                navLinks.forEach(link => {
+                navLinks.forEach(link => 
+                {
                     link.classList.toggle('active', link.dataset.section === id);
                 });
             }
