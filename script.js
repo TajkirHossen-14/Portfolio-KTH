@@ -3,9 +3,9 @@
 {
     'use strict';
 
-    // ──────────────────────────── 
+    // ───────────────────────────────── 
     // 1. SMOOTH SCROLL FOR ANCHOR LINKS
-    // ──────────────────────────── 
+    // ─────────────────────────────────  
     const navLinks = document.querySelectorAll('.nav-link');
     const navToggle = document.getElementById('nav-toggle');
     const sections = document.querySelectorAll('section[id]');
@@ -32,9 +32,9 @@
         });
     });
 
-    // ─────────────────────────────────────────────
+    // ──────────────────────────────────────────────────── 
     // 2. ACTIVE NAV LINK ON SCROLL (Intersection Observer)
-    // ─────────────────────────────────────────────
+    // ──────────────────────────────────────────────────── 
     const observerOptions = 
     {
         root: null,
@@ -59,9 +59,9 @@
 
     sections.forEach(section => sectionObserver.observe(section));
 
-    // ─────────────────────────────────────────────
+    // ────────────────────── 
     // 3. SCROLL PROGRESS BAR
-    // ─────────────────────────────────────────────
+    // ────────────────────── 
     const scrollProgress = document.getElementById('scrollProgress');
 
     function updateScrollProgress() {
@@ -99,9 +99,9 @@
         ticking = false;
     }
 
-    // ─────────────────────────────────────────────
+    // ──────────────────────── 
     // 5. SCROLL DOWN INDICATOR
-    // ─────────────────────────────────────────────
+    // ──────────────────────── 
     const scrollIndicator = document.getElementById('scrollIndicator');
 
     function updateScrollIndicator() {
