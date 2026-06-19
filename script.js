@@ -188,8 +188,7 @@
     const typingTarget = document.getElementById('typingTarget');
     const typingTexts = [
         'Student  |  Learner  |  Tech Enthusiast',
-        'CSE Undergrad  |  AI Passionate',
-        'Problem Solver  |  Creative Thinker'
+        'CSE Undergrad  |  AI Passionate'
     ];
     let textIndex = 0;
     let charIndex = 0;
