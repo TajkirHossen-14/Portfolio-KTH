@@ -64,11 +64,13 @@
     // ────────────────────── 
     const scrollProgress = document.getElementById('scrollProgress');
 
-    function updateScrollProgress() {
+    function updateScrollProgress() 
+    {
         const scrollTop = window.scrollY;
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-        if (scrollProgress) {
+        if (scrollProgress) 
+        {
             scrollProgress.style.width = scrollPercent + '%';
         }
     }
@@ -80,17 +82,22 @@
     let lastScrollY = 0;
     let ticking = false;
 
-    function handleNavScroll() {
+    function handleNavScroll() 
+    {
         const currentScroll = window.scrollY;
 
         // Add darker bg after scrolling down
-        if (mainNav) {
+        if (mainNav) 
+        {
             mainNav.classList.toggle('nav-scrolled', currentScroll > 100);
 
             // Hide nav when scrolling down, show when scrolling up
-            if (currentScroll > lastScrollY && currentScroll > 200) {
+            if (currentScroll > lastScrollY && currentScroll > 200) 
+            {
                 mainNav.classList.add('nav-hidden');
-            } else {
+            } 
+            else 
+            {
                 mainNav.classList.remove('nav-hidden');
             }
         }
@@ -104,16 +111,21 @@
     // ──────────────────────── 
     const scrollIndicator = document.getElementById('scrollIndicator');
 
-    function updateScrollIndicator() {
-        if (scrollIndicator) {
+    function updateScrollIndicator() 
+    {
+        if (scrollIndicator) 
+        {
             scrollIndicator.classList.toggle('hidden', window.scrollY > 150);
         }
     }
 
-    if (scrollIndicator) {
-        scrollIndicator.addEventListener('click', () => {
+    if (scrollIndicator) 
+    {
+        scrollIndicator.addEventListener('click', () => 
+        {
             const aboutSection = document.getElementById('about');
-            if (aboutSection) {
+            if (aboutSection) 
+            {
                 const navHeight = document.querySelector('.glass-nav').offsetHeight;
                 window.scrollTo({
                     top: aboutSection.getBoundingClientRect().top + window.scrollY - navHeight,
@@ -128,8 +140,10 @@
     // ─────────────────────────────────────────────
     const backToTop = document.getElementById('backToTop');
 
-    function updateBackToTop() {
-        if (backToTop) {
+    function updateBackToTop() 
+    {
+        if (backToTop) 
+        {
             backToTop.classList.toggle('visible', window.scrollY > 400);
         }
     }
