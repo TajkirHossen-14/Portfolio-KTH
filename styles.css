@@ -56,8 +56,10 @@ body
 
 /* ===========================
    Cursor Glow Trail
-   =========================== */
-.cursor-glow {
+   =========================== 
+*/
+.cursor-glow 
+{
     position: fixed;
     width: 350px;
     height: 350px;
@@ -71,14 +73,17 @@ body
     mix-blend-mode: screen;
 }
 
-.cursor-glow.active {
+.cursor-glow.active 
+{
     opacity: 1;
 }
 
 /* ===========================
    Section Background (replaces abstract-background)
-   =========================== */
-.section-bg {
+   =========================== 
+*/
+.section-bg 
+{
     position: absolute;
     top: 0;
     left: 0;
@@ -95,32 +100,38 @@ body
     transition: opacity 0.6s ease;
 }
 
-.section-bg.active-bg {
+.section-bg.active-bg 
+{
     opacity: 1;
 }
 
 /* Home Page Background */
-.bg-home {
+.bg-home 
+{
     background-image: url('Backgrounds/Bg_Home.jpg');
 }
 
 /* About Page Background */
-.bg-about {
+.bg-about 
+{
     background-image: url('Backgrounds/Bg_About.jpg');
 }
 
 /* Projects Page Background */
-.bg-projects {
+.bg-projects 
+{
     background-image: url('Backgrounds/Bg_Projects.jpg');
 }
 
 /* Contact Page Background */
-.bg-contact {
+.bg-contact 
+{
     background-image: url('Backgrounds/Bg_Contact.png');
 }
 
 /* Dark overlay for better text readability */
-.section-bg::before {
+.section-bg::before 
+{
     content: '';
     position: absolute;
     top: 0;
@@ -132,7 +143,8 @@ body
 }
 
 /* Subtle water-flow overlay */
-.section-bg::after {
+.section-bg::after 
+{
     content: '';
     position: absolute;
     inset: 0;
@@ -151,8 +163,10 @@ body
 
 /* ===========================
    Scroll Progress Indicator
-   =========================== */
-.scroll-progress {
+   =========================== 
+*/
+.scroll-progress 
+{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -167,8 +181,10 @@ body
 
 /* ===========================
    Navigation
-   =========================== */
-.glass-nav {
+   =========================== 
+*/
+.glass-nav 
+{
     position: fixed;
     top: 0;
     left: 0;
